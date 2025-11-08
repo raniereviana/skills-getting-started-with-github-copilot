@@ -96,13 +96,21 @@ section h3 {
   color: #666;
   margin-bottom: 4px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.participants-section li:before {
-  content: "•";
-  color: #1a237e;
-  position: absolute;
-  left: -15px;
+.delete-participant {
+  cursor: pointer;
+  color: #c62828;
+  font-size: 1.2em;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.delete-participant:hover {
+  opacity: 1;
 }
 
 .no-participants {
